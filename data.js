@@ -18,13 +18,13 @@ lib.insert = (userData) => {
                         resolve(userData);
                     } else {
                         console.log(err);
-                        reject();
+                        reject(500);
                     }
                 });
                 
             } else {
                 console.log(err);
-                reject();
+                reject(500);
             }
         });
     })
