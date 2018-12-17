@@ -40,7 +40,7 @@ lib.get = (userId) => {
                    return obj.id == userId;
                 });
 
-                if (user == false) {
+                if (!user) {
                     reject(404);
 
                 } else {
